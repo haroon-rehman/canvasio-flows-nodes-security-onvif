@@ -1,3 +1,73 @@
+# ONVIF NG
+
+Canvas IO Workflows — maintained integration/fork of an independent Node-RED node package.
+
+## Canvas IO
+
+| | |
+|--|--|
+| Domain | Security / ONVIF |
+| Development status | Integrated in local harness (cio-wfs-dev) |
+| Palette category (operational) | `Canvas IO` |
+| Config nodes | remain `category: "config"` |
+| Local repository | `cio-wfs-nodes/cio-wfs-node-security-onvif` |
+| npm package name | `node-red-contrib-onvif-ng` (unchanged) |
+
+`cio-wfs-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
+
+This repository is a **Canvas IO-maintained integration/fork**. Protocol and node runtime logic originate from upstream; Canvas IO changes are limited to integration, presentation, and local development packaging.
+
+## Nodes
+
+### Operational (palette: Canvas IO)
+
+- `onvif-device`, `onvif-discovery`, `onvif-events`, `onvif-imaging`, `onvif-media-profile`, `onvif-media-stream`, `onvif-recording`
+
+### Configuration
+
+- `onvif-config`
+
+## Development
+
+```powershell
+cd C:\GitHub\canvasio\cio-wfs-nodes\cio-wfs-node-security-onvif
+npm install
+```
+
+Local harness:
+
+```powershell
+cd C:\GitHub\canvasio\cio-wfs-dev
+npm install
+cd C:\GitHub\canvasio\cio-wfs-core
+node packages/node_modules/node-red/red.js --userDir C:\GitHub\canvasio\cio-wfs-dev
+```
+
+Open http://localhost:1880
+
+## Testing
+
+No automated unit tests.
+
+## Upstream
+
+| | |
+|--|--|
+| Original package | `node-red-contrib-onvif-ng` |
+| Upstream project | https://github.com/panthercomputers/node-red-contrib-onvif-ng |
+
+Canvas IO does not claim authorship of the original upstream implementation.
+
+## License
+
+Apache-2.0 — see ``LICENSE``.
+
+---
+
+## Upstream documentation
+
+The following sections retain useful upstream technical documentation (adapted only where needed).
+
 # node-red-contrib-onvif-ng
 
 [![npm version](https://img.shields.io/npm/v/node-red-contrib-onvif-ng.svg)](https://www.npmjs.com/package/node-red-contrib-onvif-ng)
@@ -17,19 +87,19 @@ It is retained for historical reference and is not merged into `main`.
 Archived screenshots and legacy documentation are preserved for reference but are not part of the current API contract.
 ---
 
-## ✨ Key Features
+## âœ¨ Key Features
 
-- ✅ Node-RED 4.x compatible
-- ✅ ONVIF 4.7 tested
-- ✅ Centralized profile cache (no repeated device queries)
-- ✅ Reliable media stream handling
-- ✅ Explicit capability discovery nodes
-- ✅ Clear status reporting
-- ❌ PTZ intentionally excluded (for now)
+- âœ… Node-RED 4.x compatible
+- âœ… ONVIF 4.7 tested
+- âœ… Centralized profile cache (no repeated device queries)
+- âœ… Reliable media stream handling
+- âœ… Explicit capability discovery nodes
+- âœ… Clear status reporting
+- âŒ PTZ intentionally excluded (for now)
 
 ---
 
-## 📦 Included Nodes
+## ðŸ“¦ Included Nodes
 
 ### Configuration
 - **onvif-config**  
@@ -43,7 +113,7 @@ Archived screenshots and legacy documentation are preserved for reference but ar
   - Get Snapshot URI  
   - Reconnect  
 
-  Uses cached profiles only — no live negotiation at runtime.
+  Uses cached profiles only â€” no live negotiation at runtime.
 
 - **onvif-media-profile**  
   - Get profiles  
@@ -62,12 +132,12 @@ These nodes are **discovery tools**, not continuous event streams.
 - **onvif-recording**  
   Discovers recording capabilities and configuration.
 
-> ℹ️ These nodes intentionally return similar payloads for each invocation.
+> â„¹ï¸ These nodes intentionally return similar payloads for each invocation.
 > Their purpose is **capability inspection**, not live subscriptions.
 
 ---
 
-## 🚫 PTZ Status
+## ðŸš« PTZ Status
 
 PTZ support is **not included** in this release.
 
@@ -80,7 +150,7 @@ PTZ work done so far has been intentionally carved out and may return in a later
 
 ---
 
-## 🔐 Profile Cache Contract (Important)
+## ðŸ” Profile Cache Contract (Important)
 
 - Profiles are fetched **once** during device initialization
 - Cached centrally in `onvif-config`
@@ -94,29 +164,29 @@ This ensures:
 
 ---
 
-## 📡 Supported Cameras
+## ðŸ“¡ Supported Cameras
 
 Tested with:
 - Hanwha / Wisenet cameras
 - Other ONVIF-compliant devices (results may vary)
 
-ONVIF implementations vary widely — this project favors **robust behavior over strict spec assumptions**.
+ONVIF implementations vary widely â€” this project favors **robust behavior over strict spec assumptions**.
 
 ---
 
-## 📜 License
+## ðŸ“œ License
 
 Apache License 2.0
 
 Original work:
-- © 2018 Bart Butenaers
+- Â© 2018 Bart Butenaers
 
 Modernization and maintenance:
-- © 2025–2026 Panther Computers
+- Â© 2025â€“2026 Panther Computers
 
 ---
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 Issues and PRs are welcome.
 
@@ -127,7 +197,7 @@ Please:
 
 ---
 
-## 🧭 Project Status
+## ðŸ§­ Project Status
 
 Active maintenance  
 PTZ deferred  

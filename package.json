@@ -6,9 +6,13 @@
     "node-red",
     "onvif",
     "camera",
-    "ip-camera"
+    "ip-camera",
+    "canvasio"
   ],
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
   "author": "Panther Computers",
   "homepage": "https://github.com/panthercomputers/node-red-contrib-onvif-ng",
   "bugs": {
