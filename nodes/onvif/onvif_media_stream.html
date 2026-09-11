@@ -7,6 +7,7 @@
 <script type="text/javascript">
 RED.nodes.registerType('onvif-media-stream',{
     category: 'Security · ONVIF',
+    paletteLabel: 'ONVIF Stream',
     color: '#ff758d',
     defaults: {
         name: { value:"" },
@@ -20,7 +21,7 @@ RED.nodes.registerType('onvif-media-stream',{
     outputs:1,
     icon:"font-awesome/fa-film",
     label: function() {
-        return this.name || "ONVIF Media Stream";
+        return this.name || "ONVIF Stream";
     },
     oneditprepare: function () {
         $(".actionParam-row").hide();

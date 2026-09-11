@@ -7,6 +7,7 @@
 <script type="text/javascript">
 RED.nodes.registerType('onvif-media-profile',{
     category: 'Security · ONVIF',
+    paletteLabel: 'ONVIF Profile',
     color: '#ff758d',
     defaults: {
         name: { value:"" },
@@ -19,7 +20,7 @@ RED.nodes.registerType('onvif-media-profile',{
     outputs:1,
     icon:"font-awesome/fa-sliders",
     label: function() {
-        return this.name || "ONVIF Media Profile";
+        return this.name || "ONVIF Profile";
     },
     oneditprepare: function () {
         $(".actionParam-row").hide();

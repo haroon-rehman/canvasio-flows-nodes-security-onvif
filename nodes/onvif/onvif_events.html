@@ -10,6 +10,7 @@
 <script type="text/javascript">
 RED.nodes.registerType('onvif-events', {
     category: 'Security · ONVIF',
+    paletteLabel: 'ONVIF Event Properties',
     color: '#ff758d',
 
     defaults: {
@@ -23,7 +24,7 @@ RED.nodes.registerType('onvif-events', {
     icon: "font-awesome/fa-bell",
 
     label: function () {
-        return this.name || "ONVIF Events (Discovery)";
+        return this.name || "ONVIF Event Properties";
     },
 
     oneditprepare: function () {

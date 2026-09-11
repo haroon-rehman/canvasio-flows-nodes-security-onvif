@@ -10,6 +10,7 @@
 <script type="text/javascript">
 RED.nodes.registerType('onvif-recording', {
     category: 'Security · ONVIF',
+    paletteLabel: 'ONVIF Recording',
     color: '#ff758d',
 
     defaults: {
@@ -23,7 +24,7 @@ RED.nodes.registerType('onvif-recording', {
     icon: "font-awesome/fa-circle-o",
 
     label: function () {
-    return this.name || "ONVIF Recording (Capability Discovery)";
+    return this.name || "ONVIF Recording";
     }
 
 });

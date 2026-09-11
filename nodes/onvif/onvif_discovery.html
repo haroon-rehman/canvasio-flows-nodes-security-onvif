@@ -11,6 +11,7 @@
 <script type="text/javascript">
 RED.nodes.registerType('onvif-discovery',{
     category: 'Security · ONVIF',
+    paletteLabel: 'ONVIF Discovery',
     color: '#ff758d',
     defaults: {
         name: {value:""},
@@ -21,7 +22,7 @@ RED.nodes.registerType('onvif-discovery',{
     outputs:1,
     icon:"font-awesome/fa-search",
     label: function() {
-        return this.name || "OnVIf discovery";
+        return this.name || "ONVIF Discovery";
     }
 });
 </script>
