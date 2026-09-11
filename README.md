@@ -11,7 +11,7 @@ Canvas IO Workflows — maintained integration/fork of an independent Node-RED n
 | Palette category (operational) | `Canvas IO` |
 | Config nodes | remain `category: "config"` |
 | Local repository | `cio-wfs-nodes/cio-wfs-node-security-onvif` |
-| npm package name | `node-red-contrib-onvif-ng` (unchanged) |
+| npm package name | `@canvasio/node-security-onvif` (`0.9.0-canvasio.1`); upstream `node-red-contrib-onvif-ng` `0.9.0` |
 
 `cio-wfs-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
 
