@@ -7,13 +7,13 @@ Canvas IO Workflows — maintained integration/fork of an independent Node-RED n
 | | |
 |--|--|
 | Domain | Security / ONVIF |
-| Development status | Integrated in local harness (cio-wfs-dev) |
+| Development status | Integrated in local harness (canvasio-flows-dev) |
 | Palette category (operational) | `Canvas IO` |
 | Config nodes | remain `category: "config"` |
-| Local repository | `cio-wfs-nodes/cio-wfs-node-security-onvif` |
+| Local repository | `canvasio-flows-nodes/canvasio-flows-node-security-onvif` |
 | npm package name | `@canvasio/node-security-onvif` (`0.9.0-canvasio.1`); upstream `node-red-contrib-onvif-ng` `0.9.0` |
 
-`cio-wfs-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
+`canvasio-flows-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
 
 This repository is a **Canvas IO-maintained integration/fork**. Protocol and node runtime logic originate from upstream; Canvas IO changes are limited to integration, presentation, and local development packaging.
 
@@ -30,17 +30,17 @@ This repository is a **Canvas IO-maintained integration/fork**. Protocol and nod
 ## Development
 
 ```powershell
-cd C:\GitHub\canvasio\cio-wfs-nodes\cio-wfs-node-security-onvif
+cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-nodes\canvasio-flows-node-security-onvif
 npm install
 ```
 
 Local harness:
 
 ```powershell
-cd C:\GitHub\canvasio\cio-wfs-dev
+cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-dev
 npm install
-cd C:\GitHub\canvasio\cio-wfs-core
-node packages/node_modules/node-red/red.js --userDir C:\GitHub\canvasio\cio-wfs-dev
+cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-core
+node packages/node_modules/node-red/red.js --userDir C:\GitHub\canvasio\canvasio-flows\canvasio-flows-dev
 ```
 
 Open http://localhost:1880
