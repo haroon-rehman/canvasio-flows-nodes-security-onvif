@@ -10,7 +10,7 @@ Canvas IO Workflows — maintained integration/fork of an independent Node-RED n
 | Development status | Integrated in local harness (canvasio-flows-dev) |
 | Palette category (operational) | `Canvas IO` |
 | Config nodes | remain `category: "config"` |
-| Local repository | `canvasio-flows-nodes/canvasio-flows-node-security-onvif` |
+| Local repository | `canvasio-flows-nodes/canvasio-flows-nodes-security-onvif` |
 | npm package name | `@canvasio/node-security-onvif` (`0.9.0-canvasio.1`); upstream `node-red-contrib-onvif-ng` `0.9.0` |
 
 `canvasio-flows-nodes` is an organizational parent only — not a monorepo. One node package = one Git repository.
@@ -30,7 +30,7 @@ This repository is a **Canvas IO-maintained integration/fork**. Protocol and nod
 ## Development
 
 ```powershell
-cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-nodes\canvasio-flows-node-security-onvif
+cd C:\GitHub\canvasio\canvasio-flows\canvasio-flows-nodes\canvasio-flows-nodes-security-onvif
 npm install
 ```
 
